@@ -7,7 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "build:prod": "ng build --configuration production --base-href https://miguel-sanchez241001.github.io/angularwebsite/",
+    "test:headless": "ng test --watch=false --browsers=ChromeHeadless",
     "serve:ssr:angularwebsite": "node dist/angularwebsite/server/server.mjs"
+
   },
   "private": true,
   "dependencies": {
